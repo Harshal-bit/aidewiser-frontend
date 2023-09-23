@@ -1,0 +1,135 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    min-width: -webkit-fill-available;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    min-height: 90px;
+    padding: 0 5em;
+    background: #f8984f;
+    z-index: 98;
+}
+
+
+.logo {
+    max-height : 80px;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap : 10px;
+
+}
+
+.logo:hover {
+    cursor : pointer;
+}
+
+.logo img {
+    max-height: 60px;
+    max-width: 100%;
+}
+
+.navitems{
+    display: flex;
+    flex-direction : row;
+    justify-content : space-around;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+    flex : 1;
+    transition: all 0.3s ease;
+    padding: 0;
+    margin: 0 5%;
+}
+
+.navitems > li {
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+}
+
+.navitems > li:hover {
+    color: #ffd0b1;
+}
+
+.menu {
+    font-size: 2rem;
+    display: none;
+}
+
+
+
+.connect{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    font-size: 1.8em;
+    gap: 10px;
+}
+
+.connect span {
+    background-color: white;
+    height : 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.connect span:hover{
+    position : relative;
+    cursor: pointer;
+    bottom : 10px;
+    transition: all 0.3s ease;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    body{
+        font-size: 14px;
+    }
+    .connect {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .navbar{
+        padding : 0 20px;
+    }
+    
+    .navitems{
+        display: none;
+        
+    }
+
+    .mobile-menu {
+        display: flex;
+        position: absolute;
+        z-index: 99;
+        flex-direction: column;
+        min-width: 80vw;
+        top: 90px;
+        background-color: #f8984f;
+    }
+
+    .mobile-menu li{
+        padding: 10px 0;
+    }
+
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+}

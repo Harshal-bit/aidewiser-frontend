@@ -1,0 +1,82 @@
+.services_div{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em 1em;
+    gap: 4em;
+}
+
+.heading{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.heading h2{
+    font-size: 2.5em;
+}
+
+.heading p{
+    font-size: 1.2em;
+}
+
+.heading h1{
+    font-size: 3em;
+}
+
+.service_boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.service_box{
+    width: 300px;
+    min-height: max-content;
+    position: relative;
+    background-color: #f5904c;
+    text-align: center;
+    padding: 1.5em;
+    border-radius: 0 20px;
+}
+
+.service_box:hover {
+    width: 300px;
+    background-color: #fa761f;
+    text-align: center;
+    padding: 1.5em;
+    border-radius: 0 20px;
+}
+
+
+.service_box > h6{
+    font-size: 1.4em;
+}
+
+.service_box > h5{
+    font-size: 1.1em;
+    position: relative;
+    right :  70px; 
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .left_container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .left_container h1 {
+        font-size: 2rem;
+    }
+}

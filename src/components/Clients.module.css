@@ -1,0 +1,13 @@
+.clients_div{
+    background: linear-gradient(#f8984f,#cb5303);
+    min-height: 100vh;
+    color: white;
+    padding: 5em 1em;
+    gap: 4em;
+    text-align: center;
+}
+
+.clients_div > h2{
+    font-size: 2.5em;
+    margin: 1em;
+}
