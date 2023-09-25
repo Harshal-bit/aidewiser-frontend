@@ -23,11 +23,11 @@ const NavBar = () => {
          <ul className={`${styles.navitems} ${(toggle) ? styles['mobile-menu'] : ''}`}>
 
             <li><a onClick={closeToggle} href='#home'>Home </a></li>
-            <li><a onClick={closeToggle} href='#home'>Services </a></li>
-            <li><a onClick={closeToggle} href='#home'>Clients </a></li>
-            <li><a onClick={closeToggle} href='#home'>Team </a></li>
-            <li><a onClick={closeToggle} href='#home'>About Us </a></li>
-            <li><a onClick={closeToggle} href='#home'>Contact Us </a></li>
+            <li><a onClick={closeToggle} href='#services'>Services </a></li>
+            <li><a onClick={closeToggle} href='#clients'>Clients </a></li>
+            <li><a onClick={closeToggle} href='#team'>Team </a></li>
+            <li><a onClick={closeToggle} href='#about'>About Us </a></li>
+            <li><a onClick={closeToggle} href='#footer'>Contact Us </a></li>
             <li><a onClick={closeToggle} href='#home'>Blog </a></li>
          </ul>
 

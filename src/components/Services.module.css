@@ -46,6 +46,7 @@
     text-align: center;
     padding: 1.5em;
     border-radius: 0 20px;
+    transition: all 0.5s ease;
 }
 
 .service_box:hover {
@@ -53,7 +54,7 @@
     background-color: #fa761f;
     text-align: center;
     padding: 1.5em;
-    border-radius: 0 20px;
+    border-radius: 20px 0;
 }
 
 

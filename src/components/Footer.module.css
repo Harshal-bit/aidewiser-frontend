@@ -1,0 +1,112 @@
+.footer_div{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    text-align: center;
+    gap: 1em;
+    background: linear-gradient(#f8984f,#cb5303);
+    color: white;
+    font-weight: 400;
+}
+
+.contact_div{
+    display: flex;
+    justify-content: space-around;
+    border-width: 0 0 1px 0;
+    padding-bottom: 2em;
+    border-style: solid;
+    border-color: #ff994a;
+}
+
+.contact_item{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-align: left;
+}
+
+.contact_item > span{
+    background-color: white;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+
+.footer_contents{
+    display: flex;
+    gap: 4em;
+    justify-content: space-evenly;
+    padding: 4em 2em;
+}
+
+.links{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+    font-size: large;
+    max-width: 300px;
+}
+
+.field{
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-radius: 12px;
+    font-size: 1em;
+}
+
+.links > button {
+    color: white;
+    background-color: #f39955;
+    transition: all 0.3s ease-in;
+}
+
+.links > button:hover {
+    
+    color: white;
+    background-color: black; 
+}
+
+.links >h3:hover{
+    color: #ff994a;
+}
+
+.social{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social > span {
+    
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width : 50px;
+    font-size: 2em;
+    transition: position 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer_div{
+        padding: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .contact_div{
+        flex-direction: column;
+        font-size: 12px;
+        gap: 1em;
+    }
+    .footer_contents{
+      flex-direction: column;   
+    }
+}
