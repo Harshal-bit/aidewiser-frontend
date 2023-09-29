@@ -18,8 +18,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Toaster />
-        
-        
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
