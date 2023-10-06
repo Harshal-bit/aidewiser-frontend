@@ -26,9 +26,7 @@ function App() {
           
           <Route path='/blogs/:blogid' 
           element={
-            
-              <BlogPage />
-            
+            <BlogPage />
           } />
         </Routes>
       </BrowserRouter>
