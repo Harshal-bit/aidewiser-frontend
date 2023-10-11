@@ -37,7 +37,7 @@ const About = () => {
             </div>
         </div>
         <div className={styles.right_div}>
-            <img src='/aidewiser_services_image.webp'></img>
+            <img src='/aidewiser_services_image.webp' alt='services'></img>
         </div>
     </div>
   )

@@ -1,11 +1,8 @@
 import React from 'react'
 import styles from "./WelcomeContent.module.css"
-import { faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const WelcomeContent = () => {
-
-
+  
   return (
     <div id="home" className={styles.welcome_container}>
       <div className={styles.left_container}>

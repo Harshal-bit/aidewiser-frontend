@@ -7,6 +7,8 @@ import Team from './components/Team';
 import About from './components/About';
 import Information from './components/Information';
 import Footer from './components/Footer';
+import SmoothScroll from './utils/SmmothScroll';
+import Connect from './components/Connect';
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
         <Team></Team>
         <About></About>
         <Information></Information>
+        <Connect></Connect>
         <Footer></Footer>
+        <SmoothScroll></SmoothScroll>
     </div>
   );
 }
