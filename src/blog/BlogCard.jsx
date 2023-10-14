@@ -21,6 +21,7 @@ const BlogCard = ({ title, imgsrc, content, id, dateTime, index}) => {
         <img className={styles.blogImage} src={imgsrc} alt="Blog" />
       </div>
       
+      
       <h1 className={styles.blogTitle}>{title}</h1>
       <p className={styles.blogDate}>Published on {formattedDate} at {formattedTime}</p>
       <p className={styles.blogContent}>{content}</p>
