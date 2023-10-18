@@ -5,7 +5,6 @@ import Company from './Company'
 
 const Clients = () => {
   const companies = [
-
     '/clients/annbri.bak.png',
     '/clients/awign.bak.webp',
     '/clients/byteridge.bak.jpg',

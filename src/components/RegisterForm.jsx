@@ -15,6 +15,7 @@ const RegisterForm = () => {
       alert(JSON.stringify(values, null, 2));
     },
   });
+  
   return (
     
     <form className={styles.input_form} onSubmit={formik.handleSubmit}>
