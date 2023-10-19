@@ -31,7 +31,6 @@ const BlogContent = () => {
     <>
       <div className={styles.background}></div>
       <div className={styles.blogsContainer}>
-          
             {
               (
                 blogData.map((blog,index) => (
