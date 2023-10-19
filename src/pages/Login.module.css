@@ -1,0 +1,107 @@
+/* Login.module.css */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#f8984f,#cb5303);
+
+  }
+  
+  .loginCard {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    min-height: 50vh;
+    min-width: 20vw;
+
+  }
+
+  .logo{
+    max-height : 80px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo > img{
+    max-height: 60px;
+    max-width: 60px;
+    margin: auto;
+  }
+  
+
+  .field{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    ;
+  }
+
+  
+  h1 {
+    color: black;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #f08b41;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .leftDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 1;
+    min-width: 20vw;
+    justify-content: space-around;
+  }
+  
+  .formDiv{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+  }
+
+  
+
+  .oauthDiv{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+  }
+  
+  button[type="submit"] {
+    background-color: #f08b41;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  /* Style for OAuth buttons */
+  button {
+    background-color: #f08b41;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+ 
+  

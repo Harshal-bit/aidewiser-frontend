@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./WelcomeContent.module.css"
 
-export const WelcomeContent = () => {
+const WelcomeContent = () => {
   
   return (
     <div id="home" className={styles.welcome_container}>
@@ -20,3 +20,5 @@ export const WelcomeContent = () => {
     </div>
   )
 }
+
+export default WelcomeContent;
