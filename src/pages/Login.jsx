@@ -4,9 +4,19 @@ import { faGoogle, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import axios from 'axios';
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setLogin } from '../state/index.js';
+
+
 
 const Login = () => {
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const validationSchema = Yup.object().shape({
         email: Yup.string().email('Invalid email').matches(
@@ -15,6 +25,27 @@ const Login = () => {
         ).required('Required'),
         password: Yup.string().required('Required'),
     });
+
+    const handleSubmit = async (values, actions) => {
+        try {
+            const response = await axios.post('http://localhost:3001/auth/login', values);
+            toast.success("Logged in successfully")
+            
+            dispatch(setLogin(
+                {
+                    user : response.data,
+                    token : response.data.token
+                }    
+            ))
+
+            navigate("/");
+
+
+        } catch (error) {
+            console.error('Error during Login', error);
+            toast.error("Please Register to Continue");
+        } 
+    };
 
 
     return (
@@ -29,23 +60,28 @@ const Login = () => {
                     <Formik
                         initialValues={{ email: '', password: '' }}
                         validationSchema={validationSchema}
-                        onSubmit={() => { }}
+                        onSubmit={handleSubmit}
 
                     >
-                        <Form className={styles.formDiv}>
-                            <div className={styles.feilds}>
-                                <Field type="text" name="email" placeholder="Email" />
-                                <ErrorMessage name="email" component="label" />
-                            </div>
+                        {(props) => {
+                            return (
+                                <Form className={styles.formDiv}>
+                                    <div className={styles.feilds}>
+                                        <Field type="text" name="email" placeholder="Email" />
+                                        <ErrorMessage name="email" component="label" />
+                                    </div>
 
-                            <div className={styles.feilds}>
-                                <Field type="password" name="password" placeholder="password" />
-                                <ErrorMessage name="password" component="label" />
-                            </div>
-                            <button type="submit">Login</button>
-                        </Form>
+                                    <div className={styles.feilds}>
+                                        <Field type="password" name="password" placeholder="password" />
+                                        <ErrorMessage name="password" component="label" />
+                                    </div>
+                                    <button type="submit">Login</button>
+                                </Form>)
+                        }
+
+                        }
                     </Formik>
-                    <label for="signup">Dont have an account ? <Link to="/register"> Signup </Link></label>
+                    <label htmlFor="signup">Dont have an account ? <Link to="/register"> Signup </Link></label>
                     <div className={styles.oauthDiv}>
                         <button>
                             <span>
