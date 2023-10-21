@@ -18,7 +18,7 @@ const Login = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const user = useSelector((state) => state);
-    console.log(user);
+    
     
     const validationSchema = Yup.object().shape({
         email: Yup.string().email('Invalid email').matches(
@@ -27,6 +27,7 @@ const Login = () => {
         ).required('Required'),
         password: Yup.string().required('Required'),
     });
+
 
     const handleSubmit = async (values, actions) => {
         try {
