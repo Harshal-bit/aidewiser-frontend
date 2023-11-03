@@ -7,7 +7,6 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     gap: 10px;
     justify-content: space-between;
     min-height: 90px;
@@ -85,7 +84,7 @@
 .connect span:hover{
     position : relative;
     cursor: pointer;
-    bottom : 10px;
+    transform: translateY(-10px);
     transition: all 0.3s ease;
 }
 

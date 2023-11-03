@@ -8,8 +8,6 @@ import NavBar from '../components/NavBar';
 import Services from '../components/Services';
 import Team from '../components/Team';
 import WelcomeContent from '../components/WelocomeContent';
-import SmoothScroll from '../utils/SmmothScroll';
-
 
 const Home = () => {
   return (
@@ -22,8 +20,7 @@ const Home = () => {
         <About></About>
         <Information></Information>
         <Connect></Connect>
-        <Footer></Footer>
-        <SmoothScroll></SmoothScroll>
+        <Footer />
     </>
   )
 }

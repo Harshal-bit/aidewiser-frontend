@@ -89,10 +89,13 @@
     height: 50px;
     width : 50px;
     font-size: 2em;
-    transition: position 0.4s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     cursor: pointer;
-}
 
+}
+.social > span:hover {
+    transform: translateY(-10px);
+}
 @media only screen and (max-width: 1200px) {
     .footer_div{
         padding: 2rem;

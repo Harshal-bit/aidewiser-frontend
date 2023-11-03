@@ -1,0 +1,142 @@
+
+
+.slideInLeft {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation-delay: calc(0.2s * (var(--index) + 1));
+}
+
+
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+/* BlogCard.module.css */
+
+.blogContainer {
+  max-width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.blogContainer:hover {
+  transform: scale(2.0);
+}
+.imageContainer {
+  text-align: center;
+}
+
+.imageContainer > img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.blogImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.blogTitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.blogDate {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.blogContent {
+  text-align: left;
+  overflow: hidden;
+}
+
+.readMore {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 600;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .blog{
+        height: 100px;
+        font-size: 0.8em;
+    }
+    
+    
+    .blogImage img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        
+    }
+
+    .blogTitle {
+      font-size: 1rem;
+    }
+
+    .blogcontent{
+        display: flex;
+        flex-direction: column;
+        text-overflow: ellipsis;
+        padding: 0.8em;
+    }
+
+    .blogcontent > h2 {
+        font-size: 1em;
+    }
+    
+    .paragraphContent{
+        white-space: normal; /* Allow the text to wrap to new lines */
+        overflow: hidden; /* Hide the overflowed content */
+        max-height: 100px; /* Set a maximum height equivalent to 3 lines */
+        line-height: 1.2em;
+    }
+
+    .blogContainer {
+      max-width: 80%;
+    }
+
+    
+}

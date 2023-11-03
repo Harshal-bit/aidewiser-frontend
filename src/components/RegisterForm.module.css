@@ -71,8 +71,8 @@
 
 .file_field:hover {
     background-color: black;
-    color: white;
     cursor: pointer;
+    color: white;
 }
 
 .button_element{
@@ -82,6 +82,7 @@
     font-size: 1em;
     padding-left: 2em;
     padding-right: 2em;
+    color: black;
 }
 
 

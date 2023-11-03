@@ -3,6 +3,6 @@ import authReducer from "../state/index.js"
 
 export const store = configureStore({
   reducer: {
-    counter: authReducer,
+    auth: authReducer,
   },
 })

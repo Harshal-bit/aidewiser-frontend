@@ -1,0 +1,91 @@
+.blogContainer {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+.blogContainer > hr{
+  margin-bottom: 2em;
+}
+
+.replyBox{
+  margin: 2em;
+}
+
+.replyBox > button {
+  color: black;
+  background-color: #f39955;
+  transition: all 0.3s ease-in;
+}
+
+.replyBox > button:hover {
+  color: white;
+  background-color: black;
+  
+}
+
+.headerDiv {
+  background-color: #333333ef;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+.date {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.blogImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 20px;
+}
+
+.paragraph {
+  font-size: 1.3rem; /* Increase the font size for better readability */
+  line-height: 2.5;
+  margin-bottom: 20px;
+}
+
+/* Styling for the textarea */
+.replyBox textarea {
+  width: 100%; /* Take up the full width of the container */
+  padding: 10px; /* Padding inside the textarea */
+  border: 1px solid #aaa; /* Border for the textarea */
+  border-radius: 3px; /* Rounded corners */
+  margin-bottom: 10px; /* Spacing between elements */
+}
+
+/* Styling for the input fields */
+.replyBox input {
+  width: 100%; /* Take up the full width of the container */
+  padding: 10px; /* Padding inside the input fields */
+  border: 1px solid #aaa; /* Border for the input fields */
+  border-radius: 3px; /* Rounded corners */
+  margin-bottom: 10px; /* Spacing between elements */
+}
+
+.blogContainer > h2 {
+  font-size: 2.5em;
+}
+
+.commentsDiv{
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

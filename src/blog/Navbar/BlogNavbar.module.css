@@ -1,0 +1,106 @@
+/* Navbar.module.css */
+.navbar {
+    background: #f8984f;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+    min-width: 100vw;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.logo {
+    max-height : 80px;
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.logotext {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+.logotext h1{
+    font-size: 2em;
+}
+
+.logo:hover {
+    cursor : pointer;
+}
+
+.logoImage {
+    max-height: 60px;
+    max-width: 100%;
+}
+
+.searchBar {
+    flex: 2;
+    display: flex;
+}
+
+.searchBar span{
+    background-color: white;
+    min-height : 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchBar span:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.searchinput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+button {
+    background-color: white;
+    color: orange;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the search button */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .searchBar {
+        flex: 1;
+    }
+}

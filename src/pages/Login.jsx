@@ -8,7 +8,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch,useSelector } from 'react-redux';
 import { setLogin } from '../state/index.js';
 
 
@@ -17,7 +17,9 @@ const Login = () => {
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
+    const user = useSelector((state) => state);
+    console.log(user);
+    
     const validationSchema = Yup.object().shape({
         email: Yup.string().email('Invalid email').matches(
             /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
@@ -33,7 +35,7 @@ const Login = () => {
             
             dispatch(setLogin(
                 {
-                    user : response.data,
+                    user : response.data.user,
                     token : response.data.token
                 }    
             ))
