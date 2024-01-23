@@ -14,7 +14,7 @@ const BlogPage = () => {
   
   const fetchBlogData = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/blog/blogs/${blogid}`);
+      const response = await axios.get(`http://localhost:8000/blog/blogs/${blogid}`);
 
       if (response.status === 200) {
         const createdAt = new Date(response.data.createdAt);
@@ -60,7 +60,7 @@ const BlogPage = () => {
       e.preventDefault();
       console.log(commentData)
       try {
-        const response = await axios.post(`http://localhost:3001/blog/blogs/${blogid}/comment`, commentData);
+        const response = await axios.post(`http://localhost:8000/blog/blogs/${blogid}/comment`, commentData);
   
         if (response.status === 201) {
           setCommentData({

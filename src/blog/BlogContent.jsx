@@ -13,7 +13,7 @@ const BlogContent = () => {
     async function fetchData() {
       setTimeout(async () => {
         try {
-          const response = await axios.get('http://localhost:3001/blog/blogs'); // Replace with your API endpoint
+          const response = await axios.get('http://localhost:8000/blog/blogs'); // Replace with your API endpoint
           setBlogData(response.data);
         } catch (error) {
           console.error('Error fetching data:', error);

@@ -31,7 +31,7 @@ const Login = () => {
 
     const handleSubmit = async (values, actions) => {
         try {
-            const response = await axios.post('http://localhost:3001/auth/login', values);
+            const response = await axios.post('http://localhost:8000/auth/login', values);
             toast.success("Logged in successfully")
             
             dispatch(setLogin(
