@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.71902642.css",
-    "main.js": "/react-gh-pages/static/js/main.93226d64.js",
-    "static/media/image.png": "/react-gh-pages/static/media/image.107745bbe06e057d0c4f.png",
-    "static/media/slick.svg": "/react-gh-pages/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/react-gh-pages/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/react-gh-pages/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/react-gh-pages/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/react-gh-pages/index.html",
-    "main.71902642.css.map": "/react-gh-pages/static/css/main.71902642.css.map",
-    "main.93226d64.js.map": "/react-gh-pages/static/js/main.93226d64.js.map"
+    "main.css": "/aidewiser-frontend/static/css/main.ae3afc99.css",
+    "main.js": "/aidewiser-frontend/static/js/main.f2e55027.js",
+    "static/media/image.png": "/aidewiser-frontend/static/media/image.107745bbe06e057d0c4f.png",
+    "static/media/slick.svg": "/aidewiser-frontend/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/aidewiser-frontend/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/aidewiser-frontend/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/aidewiser-frontend/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/aidewiser-frontend/index.html",
+    "main.ae3afc99.css.map": "/aidewiser-frontend/static/css/main.ae3afc99.css.map",
+    "main.f2e55027.js.map": "/aidewiser-frontend/static/js/main.f2e55027.js.map"
   },
   "entrypoints": [
-    "static/css/main.71902642.css",
-    "static/js/main.93226d64.js"
+    "static/css/main.ae3afc99.css",
+    "static/js/main.f2e55027.js"
   ]
 }
