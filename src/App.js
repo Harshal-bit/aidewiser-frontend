@@ -11,12 +11,12 @@ import Footer from './components/Footer';
 import SmoothScroll from './utils/SmmothScroll';
 
 
-
 function App() {
   useParams()
   return (
     <div className="App">
-      <BrowserRouter>
+
+      <BrowserRouter basename={process.env.PUBLIC_URL} >
         <Toaster />
         <Routes>
           <Route path='/' element={<Home />} />
